@@ -1,0 +1,30 @@
+@host=http://127.0.0.1:8000
+@username=new_user
+@password=dakota23
+@email=test@gmail.com
+@token=d32c50eb6c58f24e1573a2403c9095f3be3888e6
+@question_slug=what-the-hell-is-going-on-xK5XThSc
+@answer_uuid=903d6f61-c26e-4f15-a5e5-5ea6cef1166a
+
+
+
+### Create new account
+POST {{host}}/auth/users/
+Content-Type: application/json
+
+{
+    "username": "{{username}}",
+    "email": "{{email}}",
+    "password": "{{password}}",
+    "re_password": "{{password}}"
+}
+
+
+### Login
+POST {{host}}/auth/token/login
+Content-Type: application/json
+
+{
+    "username": "{{username}}",
+    "password": "{{password}}"
+}
