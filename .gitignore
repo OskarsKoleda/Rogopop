@@ -1,3 +1,7 @@
 .env
 frontend/node_modules
 req.txt
+rest.http
+concerts/__pycache__
+accounts/__pycache__
+RogopopApp/__pycache__
